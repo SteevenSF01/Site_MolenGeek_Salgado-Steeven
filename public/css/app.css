@@ -1,5 +1,6 @@
 @import url(./../../node_modules/bootstrap/dist/css/bootstrap.css);
 
+
     * {
         margin: 0;
         padding: 0;
@@ -158,7 +159,6 @@ nav a:hover {
             rgba(195, 18, 224, 0.8) 100%);
     color: whitesmoke;
     border-top: solid black 2px;
-    /* padding-inline: 20px; */
 }
 
 .cardHeader{
@@ -219,6 +219,14 @@ nav a:hover {
 
 
 /******************* Section 1 ******************/
+.section1{
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.cardHeader{
+    
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
 .buttonSection1 {
     padding: 0;
     margin: 0;
@@ -287,3 +295,103 @@ nav a:hover {
     transition-delay: 0.2s;
   }
   
+/***************** Fin Section 1 **************/
+
+/***************** Debut Section 2 ************/
+
+.section2{
+    position: relative;
+    height: 500px;
+    /* background-color: blue; */
+}
+  
+  .items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+  }
+  
+  .items .item {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .item img {
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+  }
+  
+  .item.active {
+    opacity: 1;
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+  }
+  
+  .item.prev {
+    opacity: 0.25;
+    transform: translate(-200%, -50%);
+  }
+  
+  .item.next {
+    opacity: 0.25;
+    transform: translate(100%, -50%);
+  }
+  
+  .items .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 500px;
+  }
+  
+  .button-container .button {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .button-container .button:hover {
+    opacity: 1;
+  }
+  
+  .button-container .button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(195, 18, 224, 0.8);
+    border-radius: 50%;
+    z-index: -99;
+  }
+  
+  .button-container .button:nth-child(1) {
+    float: left;
+  }
+  
+  .button-container .button:nth-child(2) {
+    float: right;
+  }
+
+  /********************* Responsive Section 2 ******************
+
