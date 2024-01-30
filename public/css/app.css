@@ -360,12 +360,13 @@ nav a:hover {
   }
   
   .button-container .button {
-    color: #fff;
+    color: white;
     font-size: 32px;
     cursor: pointer;
     position: relative;
     opacity: 0.75;
-    transition: all 300ms ease-in-out;
+    transition: all 600ms ease-in-out;
+    transform: translate(-50%, -110%);
   }
   
   .button-container .button:hover {
@@ -376,8 +377,8 @@ nav a:hover {
     content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    left: 50%;
     width: 50px;
     height: 50px;
     background-color: rgba(195, 18, 224, 0.8);
@@ -393,5 +394,28 @@ nav a:hover {
     float: right;
   }
 
-  /********************* Responsive Section 2 ******************
+  /********************* Responsive Section 2 ******************/
+@media (max-width: 1025px) {
+  
+  .item.next{
+    display: none;
+  }
+  .item.prev{
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .items .item{
+    width: 150px;
+    height: 150px;
+  }
+  .item img {
+    width: 150px;
+    height: 150px;
+  }
+  .items .button-container {
+    width: 250px;
+    transform: translate(-47%, 70%);
+  }
+}
 
