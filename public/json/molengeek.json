@@ -1,0 +1,380 @@
+{
+    "molengeekInfo": {
+        "name": "Molengeek",
+        "address": "Place de la Minoterie 10, 1080 Molenbeek-Saint-Jean",
+        "phone": "0470 67 51 41",
+        "email": "info@molengeek.com",
+        "tva": "BE 0655.835.212"
+    },
+    "formations": {
+        "formationsLongues": {
+            "codingSchool": {
+                "nom": "Coding School",
+                "duree": "6 mois",
+                "descriptif": "Apprends à coder un site internet de A à Z",
+                "condition": {
+                    "ageMax": "29 ans",
+                    "situation": "Demandeur d'emploi",
+                    "prix": "Gratuit",
+                    "horaire": "temps plein 9h / 17h"
+                }
+            },
+            "marketingDigital": {
+                "nom": "Marketing Digital",
+                "duree": "6 mois",
+                "descriptif": "Forme-toi au marketing digital",
+                "condition": {
+                    "ageMax": "29 ans",
+                    "situation": "Demandeur d'emploi",
+                    "prix": "Gratuit",
+                    "horaire": "temps plein 9h / 17h"
+                }
+            },
+            "webmaster360": {
+                "nom": "Webmaster 360",
+                "duree": "6 mois",
+                "descriptif": "Crée des sites performants et attractifs avec WordPress",
+                "condition": {
+                    "ageMax": null,
+                    "situation": "Demandeur d'emploi",
+                    "prix": "Gratuit",
+                    "horaire": "temps plein 9h / 17h"
+                }
+            },
+            "aws": {
+                "nom": "AWS re/Start",
+                "duree": "3 mois",
+                "descriptif": "Développe tes compétences en Cloud",
+                "condition": {
+                    "ageMax": "29 ans",
+                    "situation": "Demandeur d'emploi",
+                    "prix": "Gratuit",
+                    "horaire": "temps plein 9h / 17h"
+                }
+            },
+            "salesforceAdmin": {
+                "nom": "Salesforce Administrateur",
+                "duree": "3 mois",
+                "descriptif": "Optimise un bon service client grâce à Salesforce",
+                "condition": {
+                    "ageMax": null,
+                    "situation": "Demandeur d'emploi",
+                    "prix": "Gratuit",
+                    "horaire": "temps plein 9h / 17h"
+                }
+            }
+        },
+        "formationsCourtes": [
+            {
+                "nom": "HTML & CSS Débutant",
+                "pack": "Pack Web"
+            },
+            {
+                "nom": "HTML & CSS Avancé",
+                "pack": "Pack Web"
+            },
+            {
+                "nom": "Javascript",
+                "pack": "Pack Web - Coding"
+            },
+            {
+                "nom": "Python",
+                "pack": "Pack Coding"
+            },
+            {
+                "nom": "Photoshop Débutant",
+                "pack": "Pack Design"
+            },
+            {
+                "nom": "Photoshop Avancé",
+                "pack": "Pack Design"
+            },
+            {
+                "nom": "Illustrator",
+                "pack": "Pack Design - Content creator"
+            },
+            {
+                "nom": "Indesign",
+                "pack": "Pack Design"
+            },
+            {
+                "nom": "Premier Pro",
+                "pack": "Pack audiovisuel - Content creator"
+            },
+            {
+                "nom": "After Effects",
+                "pack": "Pack audiovisuel"
+            },
+            {
+                "nom": "Adobe Audition",
+                "pack": "Pack audiovisuel"
+            },
+            {
+                "nom": "Shopify Débutant",
+                "pack": "Pack E-commerce - Entrepreneur"
+            },
+            {
+                "nom": "Shopify Avancé",
+                "pack": "Pack E-commerce - Entrepreneur"
+            },
+            {
+                "nom": "Google Analytics",
+                "pack": "Pack E-commerce - Entrepreneur"
+            },
+            {
+                "nom": "Google Ads",
+                "pack": "Pack E-commerce - Entrepreneur"
+            },
+            {
+                "nom": "Wordpress Débutant",
+                "pack": "Pack Entrepreneur - Web"
+            },
+            {
+                "nom": "Wordpress Avancé",
+                "pack": "Pack Entrepreneur - Web"
+            },
+            {
+                "nom": "Réseaux Sociaux Débutant",
+                "pack": "Pack Content creator - Entrepreneur - Ecommerce"
+            },
+            {
+                "nom": "Réseaux Sociaux Avancé",
+                "pack": "Pack Content creator - Entrepreneur - Ecommerce"
+            }
+        ],
+        "seancesInfos": [
+            {
+                "date": "19/02",
+                "nom": "séance d'information tic"
+            },
+            {
+                "date": "22/02",
+                "nom": "séance d'information Cybersecurity"
+            },
+            {
+                "date": "26/02",
+                "nom": "séance d'information Marketing Lab"
+            },
+            {
+                "date": "29/02",
+                "nom": "séance d'information Coding School"
+            },
+            {
+                "date": "04/03",
+                "nom": "séance d'information AWS"
+            },
+            {
+                "date": "07/03",
+                "nom": "séance d'information Salesforce"
+            }
+        ]
+    },
+    "partenaires": {
+        "bxFormation": {
+            "nom": "Bruxelles Formation",
+            "logo": "https://molengeek.com/wp-content/uploads/2022/02/f3f2da8615bcd41f571b40fbb5d12871.png"
+        },
+        "pwc": {
+            "nom": "PWC",
+            "logo": "https://molengeek.com/wp-content/uploads/2022/02/logo-pwc-300x150.png"
+        },
+        "aws": {
+            "nom": "AWS",
+            "logo": "https://molengeek.com/wp-content/uploads/2022/02/logo-aws-restart-2x-300x105.png"
+        },
+        "Microsoft": {
+            "nom": "Microsoft",
+            "logo": "https://molengeek.com/wp-content/uploads/2022/08/ezgif-1-55363425cb.png"
+        },
+        "google": {
+            "nom": "Google",
+            "logo": "https://molengeek.com/wp-content/uploads/2022/02/580b57fcd9996e24bc43c51f-300x300.png"
+        },
+        "proximus": {
+            "nom": "Proximus",
+            "logo": "https://molengeek.com/wp-content/uploads/2022/02/proximus_2017-08-29-13-57-34_cache-300x300.png"
+        },
+        "actiris": {
+            "nom": "Actiris",
+            "logo": "https://molengeek.com/wp-content/uploads/2022/02/Actiris-300x300.png"
+        },
+        "meta": {
+            "nom": "Meta",
+            "logo": "https://molengeek.com/wp-content/uploads/2022/02/Meta-Logo-300x169.png"
+        }
+    },
+    "reseauxSociaux": {
+        "facebook": "https://www.facebook.com/molengeek/",
+        "twitter": "https://twitter.com/molenGeek",
+        "instagram": "https://www.instagram.com/molengeek/",
+        "linkedin": "https://www.linkedin.com/company/molengeek/"
+    },
+    "videosTemoignage": {
+        "videoI": "https://youtu.be/QfLqHDuaShY",
+        "videoII": "https://youtu.be/XzKHGe1BWI4"
+    },
+    "FAQ": {
+        "questionI": "Quel est le planning des formations ?",
+        "reponseI": "Retrouve le programme des prochaines formations sur la page d’accueil",
+        "questionII": "Faut-il des pré-requis pour s’inscrire à une formation ?",
+        "reponseII": "Aucun prérequis n’est demandé pour s’inscire aux formations",
+        "questionIII": "Puis-je m’inscrire si je ne suis pas demandeur d’emploi ?",
+        "reponseIII": "Si tu n’es pas demandeur d’emploi, contacte-nous et nous te remettrons un devis .",
+        "questionIV": "Quelles formations puis-je suivre si je ne suis pas demandeur d’emploi ?",
+        "reponseIV": "Toutes les formations courtes sont accessibles aux particuliers et entreprises. Contacte-nous pour plus d’information",
+        "questionV": "Combien coûtent les formations à MolenGeek ?",
+        "reponseV": "Les formations sont gratuites pour les demandeurs d’emploi sur présentation de chèques Tic disponibles chez Actiris . Pour les particuliers et entreprises, il faut nous contacter pour recevoir un devis."
+    },
+    "articles": [
+        {
+            "date": "12/09/2023",
+            "source": "DH",
+            "headline": "MolenGeek lance une plateforme pour soutenir les actions de solidarité après le séisme au Maroc. « J’appelle toutes les associations à nous contacter »"
+        },
+        {
+            "date": "12/09/2023",
+            "source": "L’avenir",
+            "headline": "Ibrahim Ouassari (MolenGeek) lance une plateforme pour soutenir les actions de solidarité après le séisme au Maroc"
+        },
+        {
+            "date": "11/09/2023",
+            "source": "BX1",
+            "headline": "MolenGeek lance SideGeek, une plateforme de recrutement innovante"
+        },
+        {
+            "date": "11/09/2023",
+            "source": "L’Echo",
+            "headline": "Ibrahim Ouassari (MolenGeek) « L’enseignement actuel n’est pas assez inclusif »"
+        },
+        {
+            "date": "10/09/2023",
+            "source": "Le soir",
+            "headline": "Débat de rentrée : quel chemin de formation pour mener les jeunes Bruxellois à l’emploi?"
+        },
+        {
+            "date": "06/09/2023",
+            "source": "L’Echo",
+            "headline": "MolenGeek lance SideGeek pour augmenter le taux d’emploi de ses alumni"
+        },
+        {
+            "date": "20/07/2023",
+            "source": "Bladi.net",
+            "headline": "Fête nationale belge : Sidi Larbi Cherkaoui et Ibrahim Ouassari décorés"
+        },
+        {
+            "date": "20/07/2023",
+            "source": "Le Vif",
+            "headline": "Voici les nouveaux titres de noblesse et honorifiques accordés par le Roi"
+        },
+        {
+            "date": "19/04/2023",
+            "source": "Arte",
+            "headline": "Molengeek : La cybersécurité accessible à tous"
+        },
+        {
+            "date": "23/03/2023",
+            "source": "Le Soir",
+            "headline": "Les emplois dans l’informatique: «J’étais déjà sollicité avant d’être diplômé»"
+        },
+        {
+            "date": "18/03/2023",
+            "source": "News.Day FR",
+            "headline": "BeCode, Molengeek, Campus 19… Quand entreprendre rime avec apprentissage"
+        },
+        {
+            "date": "18/03/2023",
+            "source": "La Libre",
+            "headline": "BeCode, Molengeek, le Campus 19… Quand entreprendre rime avec apprendre"
+        },
+        {
+            "date": "27/02/2023",
+            "source": "BX1",
+            "headline": "Molengeek démarre sa formation pour découvrir les bases de la cybersécurité"
+        },
+        {
+            "date": "06/02/2023",
+            "source": "L’Echo",
+            "headline": "Ibrahim Ouassari (Molengeek): « Mes idées me viennent quand je cours, à 6h du matin »"
+        },
+        {
+            "date": "03/02/3023",
+            "source": "BX1",
+            "headline": "La Défense lance sa composante “cyber” : “Nous recrutons différents profils”"
+        },
+        {
+            "date": "23/01/2023",
+            "source": "La Libre",
+            "headline": "Des millions d’emplois vacants en cybersécurité : “Il faut casser l’exigence du haut diplôme à tout prix”"
+        },
+        {
+            "date": "14/01/2023",
+            "source": "Telecompaper",
+            "headline": "Molengeek to start cybersecurity training"
+        },
+        {
+            "date": "13/01/2023",
+            "source": "IT Daily",
+            "headline": "Molengeek start opleiding in cybersecurity"
+        },
+        {
+            "date": "12/01/2023",
+            "source": "Le Soir",
+            "headline": "Cybersécurité: la Défense et Microsoft font confiance à MolenGeek"
+        },
+        {
+            "date": "12/01/2023",
+            "source": "Data News",
+            "headline": "Visite de Kate Behncken (Microsoft) dans les locaux de MolenGeek"
+        },
+        {
+            "date": "12/01/2023",
+            "source": "L’avenir",
+            "headline": "Formation très demandée en cybersécurité à MolenGeek: les jeunes reçoivent la visite d’un grand ponte de Microsoft"
+        },
+        {
+            "date": "11/01/2023",
+            "source": "RTBF",
+            "headline": "MolenGeek et Microsoft forment des experts en cybersécurité : leur profil intéresse déjà la Défense"
+        },
+        {
+            "date": "04/01/2023",
+            "source": "L’Actualité",
+            "headline": "Le bug. Avec MolenGeek, j’ai réussi à créer l’école de mes rêves"
+        }
+    ],
+    "jobs": [
+        {
+            "poste": "Talent Strategist",
+            "description": "Nous recherchons actuellement des passionnés du onboarding pour rejoindre notre équipe dynamique de stratèges talentueux."
+        },
+        {
+            "poste": "Gestionnaire de bâtiment et des services généraux",
+            "description": "Le gestionnaire de bâtiment et des services généraux est responsable de veiller au bon fonctionnement et à la maintenance du bâtiment."
+        },
+        {
+            "poste": "Monteur Vidéo",
+            "description": "En tant que Monteur Vidéo chez Molengeek, vous serez le maître de la mise en scène visuelle, contribuant à façonner le récit de Molengeek à travers des contenus vidéo percutants."
+        },
+        {
+            "poste": "Ressources Humaines",
+            "description": "Responsable des Ressources Humaines chez MolenGeek – Jouez un rôle clé dans une aventure unique au cœur d’un écosystème technologique qui innove sans cesse !"
+        },
+        {
+            "poste": "Designer",
+            "description": "En tant que Designer chez Molengeek, vous incarnerez la créativité visuelle au cœur de notre écosystème technologique et entrepreneurial."
+        },
+        {
+            "poste": "Project Manager",
+            "description": "En tant que Project Manager chez Molengeek, vous serez le chef d’orchestre des initiatives et des projets au sein de notre écosystème dynamique axé sur la technologie et l’entrepreneuriat."
+        },
+        {
+            "poste": "Assistant de Production",
+            "description": "En tant qu’Assistant de Production pour des tournages chez MolenGeek, vous jouerez un rôle essentiel dans la réalisation fluide et réussie de projets visuels."
+        },
+        {
+            "poste": "Business Analyst Junior",
+            "description": "Envie de rejoindre notre équipe dynamique et innovante ? Embarquez pour une aventure exceptionnelle au sein d’un écosystème technologique vibrant, où chaque jour est une opportunité de redéfinir les règles du jeu !"
+        }
+    ],
+    "molengeekLogo": "https://molengeek.com/wp-content/uploads/2022/02/MG_LOGO_V3x50-1.png"
+}
