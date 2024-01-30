@@ -42,6 +42,7 @@ nav a {
 
 nav a:hover {
     background-color: #5a0a60;
+    border-radius: 5px;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     color: white;
 }
@@ -152,7 +153,6 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(131, 6, 228);
     background: linear-gradient(167deg,
             rgba(131, 6, 228, 0.8) 0%,
             rgba(195, 18, 224, 0.8) 100%);
@@ -160,6 +160,15 @@ nav a:hover {
     border-top: solid black 2px;
     /* padding-inline: 20px; */
 }
+
+.cardHeader{
+    background: linear-gradient(167deg,
+            rgba(131, 6, 228, 0.8) 0%,
+            rgba(195, 18, 224, 0.8) 100%) !important;
+            color: white;
+            border-radius: 5px;
+}
+
 
 /***************** Responsive Header *************/
 @media (min-width:901px) and (max-width: 1025px) {
@@ -202,8 +211,79 @@ nav a:hover {
         font-size: 15px;
     }
     .imgHeader{
-        width: 111%;
+        width: 106%;
     }
 }
 
-/***************** Fin Responsive Header ***************
+/***************** Fin Responsive Header et Header ***************
+
+
+/******************* Section 1 ******************/
+.buttonSection1 {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .buttonSection1 {
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .buttonSection1 p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: rgb(209, 205, 205);
+  }
+  
+  .buttonSection1::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: white;
+    height: 2px;
+    transition: 0.4s ease-out;
+  }
+  
+  .buttonSection1 p::before {
+    position: absolute;
+    content: "Explorer";
+    width: 0%;
+    inset: 0;
+    color: white;
+    overflow: hidden;
+    font-weight: 600;
+    transition: 0.4s ease-out;
+  }
+  
+  .buttonSection1:hover::after {
+    font-weight: 900;
+    width: 100%;
+  }
+  
+  .buttonSection1:hover p::before {
+    width: 100%;
+  }
+  
+  .buttonSection1:hover svg {
+    transform: translateX(4px);
+    color: white;
+}
+  
+  .buttonSection1 svg {
+    color: rgb(209, 205, 205);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+  }
+  
