@@ -50,7 +50,9 @@ nav a:hover {
     width: 400px;
     margin-right: auto;
 }
-
+.logo:hover{
+  background-color: white;
+}
 .sidebar {
     position: fixed;
     top: 0;
