@@ -4,11 +4,6 @@
   src: url(./../src/fonts/PlayfairDisplay-Regular.ttf);
 }
 
-/* 
-    * {
-        margin: 0;
-        padding: 0;
-    } */
 
 body {
     min-height: 100vh;
@@ -55,7 +50,6 @@ nav a:hover {
 
 .logo {
     width: 400px;
-    /* height: 85px; */
     margin-right: auto;
 }
 

@@ -1,4 +1,5 @@
 import DATA from "./../json/molengeek.json" assert { type: "json" };
+
 console.log(DATA.reseauxSociaux);
 
 //! ********************** Menu Burger ***************************
@@ -43,7 +44,7 @@ document.querySelector(".dropdown").addEventListener("focusout", () =>{
 
 //? ---------------------------------------------------------------
 
-//! ********************** Section 2 Partenaires *******************
+//! ********************** Section 2 Partenaires Home *******************
 
 		let slides = document.querySelectorAll(".item");
 		let button = document.querySelectorAll(".button");
@@ -95,12 +96,13 @@ document.querySelector(".dropdown").addEventListener("focusout", () =>{
 
 //? -----------------------------------------------------------------
 
-//! ***************************** Contact ****************************
+//! ***************************** Contact Home****************************
 
 let liResaux = document.querySelector(".resauxSoc").querySelectorAll("a")
 
 Object.values(DATA.reseauxSociaux).forEach((element,index) => {
 	liResaux[index].href = element
+	console.log(element);
 })
 
 let contactP = document.querySelector(".bull").querySelectorAll("p")
@@ -112,6 +114,3 @@ Object.values(DATA.molengeekInfo).forEach((element,index) => {
 //! ************************* Fin Contact ************************
 
 //? ---------------------------------------------------------------
-
-//! ************************* Footer ************************
-
