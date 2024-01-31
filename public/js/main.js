@@ -1,5 +1,5 @@
 import DATA from "./../json/molengeek.json" assert { type: "json" };
-console.log(DATA);
+console.log(DATA.reseauxSociaux);
 
 //! ********************** Menu Burger ***************************
 let sidebar = document.querySelector(".sidebar");
@@ -45,10 +45,8 @@ document.querySelector(".dropdown").addEventListener("focusout", () =>{
 
 //! ********************** Section 2 Partenaires *******************
 
-// I will be creating a different pen with touch support but right // now I have no time for it due to school
-
-		const slides = document.querySelectorAll(".item");
-		const button = document.querySelectorAll(".button");
+		let slides = document.querySelectorAll(".item");
+		let button = document.querySelectorAll(".button");
 
 		let current = 0;
 		let prev = 7;
@@ -58,11 +56,11 @@ document.querySelector(".dropdown").addEventListener("focusout", () =>{
 			button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
 		}
 
-		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+		let gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
-		const gotoNext = () => current < 7 ? gotoNum(current + 1) : gotoNum(0);
+		let gotoNext = () => current < 7 ? gotoNum(current + 1) : gotoNum(0);
 
-		const gotoNum = number => {
+		let gotoNum = number => {
 			current = number;
 			prev = current - 1;
 			next = current + 1;
@@ -88,7 +86,20 @@ document.querySelector(".dropdown").addEventListener("focusout", () =>{
 		}
 
     let imageSection2 = document.querySelector(".items").querySelectorAll("img")
-    console.log(imageSection2);
     Object.values(DATA.partenaires).forEach((element, index) => {
       imageSection2[index].src = `${element.logo}`
     });
+
+
+//! *************************** Fin Section Partenaire ************************
+
+//? ---------------------------------------------------------------
+
+//! ***************************** Contact **************************
+
+let liResaux = document.querySelector(".soc").querySelectorAll("img")
+
+// Object.values(DATA.reseauxSociaux).forEach((element,index) => {
+// 	liResaux[index].src = `${element.reseauxSociaux}`
+// })
+console.log(liResaux);

@@ -1,4 +1,8 @@
 @import url(./../../node_modules/bootstrap/dist/css/bootstrap.css);
+@font-face {
+  font-family: Playfair;
+  src: url(./../src/fonts/PlayfairDisplay-Regular.ttf);
+}
 
 
     * {
@@ -8,6 +12,7 @@
 
 body {
     min-height: 100vh;
+    font-family: Plafair;
 }
 /***************************************/
 /************ NavBar header ************/
@@ -38,7 +43,7 @@ nav a {
     display: flex;
     align-items: center;
     color: black;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 nav a:hover {
@@ -97,7 +102,7 @@ nav a:hover {
     background: white;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 15px;
     width: 100px;
     font-weight: 500;
     cursor: pointer;
@@ -141,15 +146,19 @@ nav a:hover {
 /************** Header Bottom **********/
 
 .headerTop {
-    width: 100.8%;
+    width: 100%;
+  }
+  
+  .headerBottom{
+    width: 100%;
+    height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid black 2px;
 }
 
-.imgHeader {
-    width: 101.6%;
-    border-top: solid black 2px;
-}
-
-.textHbottom {
+.headerBottomLeft  {
+  width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,7 +167,12 @@ nav a:hover {
             rgba(131, 6, 228, 0.8) 0%,
             rgba(195, 18, 224, 0.8) 100%);
     color: whitesmoke;
-    border-top: solid black 2px;
+    font-size: larger;
+}
+.headerBottomRight{
+  width: 50%;
+  background-image: url(./../src/img/imgHeader.jpg);
+  background-size: cover;
 }
 
 .cardHeader{
@@ -172,22 +186,19 @@ nav a:hover {
 
 /***************** Responsive Header *************/
 @media (min-width:901px) and (max-width: 1025px) {
-    .imgHeader{
-        width: 102%;
-    }
+  nav a{
+    padding-inline: 10px;
+  }
 }
 @media (max-width: 900px) {
     .hideObMobile {
         display: none;
     }
-    .imgHeader{
-        width: 103%;
-    }
 
     .menuButton {
         display: block;
     }
-    .textHbottom p{
+    .headerBottomLeft p{
         text-align: center;
         width: 90%;
     }
@@ -198,21 +209,39 @@ nav a:hover {
         margin-right: auto;
     }
 }
+@media (max-width: 769px) {
+  .headerBottom{
+    margin-bottom: 250px;
+  }
+  .headerBottomLeft{
+    width: 100%;
+    height: 350px;
+  }
+  .headerBottomRight{
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: 800px 370px;
+  }
+}
+
 @media (max-width: 500px) {
     .logo{
         width: 150px;
         height: 50px;
     }
-    .textHbottom{
-        font-size: 8px;
+    .headerBottom{
+      height: 400px;
+    }
+    .headerBottomLeft{
+        font-size: 12px;
         text-align: center;
     }
-    .textHbottom h1{
-        font-size: 15px;
+    .headerBottomRight{
+      height: 250px;
+      background-size: cover;
     }
-    .imgHeader{
-        width: 106%;
-    }
+
 }
 
 /***************** Fin Responsive Header et Header ***************
@@ -248,7 +277,7 @@ nav a:hover {
     margin: 0;
     position: relative;
     font-size: 20px;
-    color: rgb(209, 205, 205);
+    color: rgba(255, 255, 255, 0.7);
   }
   
   .buttonSection1::after {
@@ -288,7 +317,7 @@ nav a:hover {
 }
   
   .buttonSection1 svg {
-    color: rgb(209, 205, 205);
+    color: rgba(255, 255, 255, 0.7);
     transition: 0.2s;
     position: relative;
     width: 15px;
@@ -338,7 +367,7 @@ nav a:hover {
   
   .item.active {
     opacity: 1;
-    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.5);
   }
   
   .item.prev {
@@ -419,3 +448,179 @@ nav a:hover {
   }
 }
 
+/********************* Fin Section 2 *************************/
+
+/********************** Debut Section 4 **********************/
+
+input:active, input:focus {
+  outline: none;
+}
+input{
+    border: 1px solid #5EB4CB;
+    margin-block: 5px ;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #9C9C9C;
+    padding:13px 25px;
+    background: transparent;
+    width:350px;
+    max-width: 100%;    
+}
+
+ul{
+    list-style: none;
+    padding: 0
+}
+
+ul li{
+    display: inline-block;
+    padding-right: 10px;     
+}
+.contenue {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Playfair;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+@media (min-width: 576px){
+.contenue {
+    max-width: 540px;
+}
+}
+
+@media (min-width: 768px){
+.contenue {
+    max-width: 720px;
+}
+}
+
+@media (min-width: 992px){
+.contenue {
+    max-width: 960px;
+}
+}
+
+@media (min-width: 1200px){
+.contenue {
+    max-width: 1140px;
+}
+}
+
+
+.form{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+
+.left-col{
+    width: 40%;
+    padding: 135px 30px 0 30px;
+    background: linear-gradient(167deg,
+            rgba(131, 6, 228, 0.8) 0%,
+            rgba(195, 18, 224, 0.8) 100%)
+}
+
+
+
+.left-col h2{
+    color:#fff;
+    font-size:32px;
+    line-height: 30px;
+}
+
+/* .left-col img.img1{
+    margin-bottom: 10px;
+} */
+
+.left-col .bull{
+    margin: 100px 0 0;
+}
+.left-col .bull p{
+    font-size: 20px;
+    color: #fff;
+    text-align: start;
+}
+
+/* .left-col .bull img.img2{
+    margin:25px 0;
+} */
+
+.left-col .soc{
+    margin: 100px 0 0;
+}
+.left-col .soc a img{
+    transition: 0.5s;   
+}
+.left-col .soc a img:hover{
+    transition: 0.5s;
+    transform: scale(1.3)
+}
+
+.left-col .soc p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.left-col .soc ul{
+    padding:20px 0 50px;
+}
+
+
+.right-col{
+    width: 60%;
+    padding: 135px 30px 0 30px;    
+    background: rgba(255, 255, 255, 0.7);
+  
+}
+
+.right-col h2{
+    /* margin-bottom: 70px; */
+    font-size: 20px;
+    color: #585858;
+    font-weight: 600;    
+}
+
+.right-col button{
+  background: linear-gradient(167deg,
+  rgba(131, 6, 228, 0.8) 0%,
+  rgba(195, 18, 224, 0.8) 100%);
+    border-radius: 18px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px 35px;
+    margin-top: 20px;
+    font-size: 18px;
+    border:none;
+    cursor: pointer;
+    transition: 2s ease;
+
+}
+.right-col button:hover{
+  background: linear-gradient(360deg,
+  rgba(131, 6, 228, 0.8) 0%,
+  rgba(195, 18, 224, 0.8) 100%);
+}
+@media screen and (max-width: 992px) {
+    .form{
+        display: block;
+    }
+    /* .left-col img.img1{
+        display: none
+    } */
+
+    .right-col, .left-col{
+        width:100%;
+        padding: 40px 0;
+    }
+
+}
