@@ -450,7 +450,7 @@ nav a:hover {
 
 /********************* Fin Section 2 *************************/
 
-/********************** Debut Section 4 **********************/
+/********************** Debut Section 4 (Contact) **********************/
 
 input:active, input:focus {
   outline: none;
@@ -488,139 +488,141 @@ ul li{
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
 
 }
-
-@media (min-width: 576px){
-.contenue {
-    max-width: 540px;
-}
-}
-
-@media (min-width: 768px){
-.contenue {
-    max-width: 720px;
-}
-}
-
-@media (min-width: 992px){
-.contenue {
-    max-width: 960px;
-}
-}
-
-@media (min-width: 1200px){
-.contenue {
-    max-width: 1140px;
-}
-}
-
-
 .form{
     display: flex;
     text-align: center;
     justify-content: center; 
 }
 
-.left-col{
+.columnGauche{
     width: 40%;
-    padding: 135px 30px 0 30px;
+    padding: 50px 30px 0 30px;
     background: linear-gradient(167deg,
             rgba(131, 6, 228, 0.8) 0%,
             rgba(195, 18, 224, 0.8) 100%)
 }
 
-
-
-.left-col h2{
+.columnGauche h2{
     color:#fff;
     font-size:32px;
     line-height: 30px;
 }
 
-/* .left-col img.img1{
-    margin-bottom: 10px;
-} */
-
-.left-col .bull{
+.columnGauche .bull{
     margin: 100px 0 0;
 }
-.left-col .bull p{
-    font-size: 20px;
+.columnGauche .bull p{
+    font-size: 15px;
     color: #fff;
     text-align: start;
 }
 
-/* .left-col .bull img.img2{
-    margin:25px 0;
-} */
-
-.left-col .soc{
-    margin: 100px 0 0;
-}
-.left-col .soc a img{
-    transition: 0.5s;   
-}
-.left-col .soc a img:hover{
-    transition: 0.5s;
-    transform: scale(1.3)
+.columnGauche .soc{
+    margin: 40px 0 0;
 }
 
-.left-col .soc p{
+.columnGauche .soc p{
     color: #fff;
     font-size: 18px;
     font-weight: 300;
 }
 
-.left-col .soc ul{
+.columnGauche .soc ul{
     padding:20px 0 50px;
 }
 
 
-.right-col{
+.columnDroite{
     width: 60%;
     padding: 135px 30px 0 30px;    
     background: rgba(255, 255, 255, 0.7);
-  
 }
 
-.right-col h2{
-    /* margin-bottom: 70px; */
+.columnDroite h2{
     font-size: 20px;
     color: #585858;
     font-weight: 600;    
 }
 
-.right-col button{
-  background: linear-gradient(167deg,
-  rgba(131, 6, 228, 0.8) 0%,
-  rgba(195, 18, 224, 0.8) 100%);
+.columnDroite button{
+
+  background-color: white;
     border-radius: 18px;
     font-weight: 500;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #585858;
     padding: 10px 35px;
     margin-top: 20px;
     font-size: 18px;
     border:none;
+    border: 1px solid #5EB4CB;
     cursor: pointer;
-    transition: 2s ease;
-
+    transition: 0.5s ease;
+    
+  }
+  .columnDroite button:hover{
+    background: linear-gradient(360deg,
+    rgba(131, 6, 228, 0.8) 0%,
+    rgba(195, 18, 224, 0.8) 100%);
+    color: white;
+    border: none;
 }
-.right-col button:hover{
-  background: linear-gradient(360deg,
-  rgba(131, 6, 228, 0.8) 0%,
-  rgba(195, 18, 224, 0.8) 100%);
+.resauxSoc{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-@media screen and (max-width: 992px) {
+.resauxSoc li>a> i:hover{
+  cursor: pointer;
+  transition: 1s ease;
+  transform: scale(1.2) translateY(-6px);
+}
+.resauxSoc >li>i>a{
+  width: 100%;
+}
+@media (max-width: 992px) {
     .form{
         display: block;
     }
-    /* .left-col img.img1{
-        display: none
-    } */
 
-    .right-col, .left-col{
+    .columnDroite, .columnGauche{
         width:100%;
         padding: 40px 0;
     }
-
+    }
+  @media (max-width : 500px) {
+    .bull p{
+      padding-inline: 20px;
+    }
+  }
+@media (min-width: 1200px){
+  .contenue {
+    min-width: 1140px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 }
+
+@media (min-width: 992px){
+  .contenue {
+    min-width: 900px;
+  }
+  }
+@media (min-width: 768px){
+  .contenue {
+    max-width: 720px;
+  }
+  .bull p{
+    padding-left: 20px;
+  }
+}
+
+  
+  @media (min-width: 576px){
+    .contenue {
+        max-width: 540px;
+      
+    }
+    }
+
+/*********************** Fin Section 4 (Contact) *******************/
