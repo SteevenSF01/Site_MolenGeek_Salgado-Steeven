@@ -102,7 +102,6 @@ let liResaux = document.querySelector(".resauxSoc").querySelectorAll("a")
 Object.values(DATA.reseauxSociaux).forEach((element,index) => {
 	liResaux[index].href = element
 })
-console.log(DATA.molengeekInfo);
 
 let contactP = document.querySelector(".bull").querySelectorAll("p")
 
@@ -114,5 +113,5 @@ Object.values(DATA.molengeekInfo).forEach((element,index) => {
 
 //? ---------------------------------------------------------------
 
-//! ************************* Newletter ************************
+//! ************************* Footer ************************
 
