@@ -91,11 +91,11 @@ document.querySelector(".dropdown").addEventListener("focusout", () =>{
     });
 
 
-//! *************************** Fin Section Partenaire ************************
+//! ********************* Fin Section Partenaire ********************
 
-//? ---------------------------------------------------------------
+//? -----------------------------------------------------------------
 
-//! ***************************** Contact **************************
+//! ***************************** Contact ****************************
 
 let liResaux = document.querySelector(".resauxSoc").querySelectorAll("a")
 
@@ -110,4 +110,9 @@ Object.values(DATA.molengeekInfo).forEach((element,index) => {
 	contactP[index].innerText += ` ${element}`
 })
 
-console.log(contactP);
+//! ************************* Fin Contact ************************
+
+//? ---------------------------------------------------------------
+
+//! ************************* Newletter ************************
+
