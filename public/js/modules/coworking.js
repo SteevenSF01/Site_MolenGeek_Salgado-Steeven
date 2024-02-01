@@ -1,5 +1,4 @@
 import DATA from "./../../json/molengeek.json" assert { type: "json" };
-console.log(DATA.reseauxSociaux);
 
 
 //! ********************** Menu Burger ***************************
