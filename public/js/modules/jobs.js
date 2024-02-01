@@ -1,5 +1,4 @@
 import DATA from "./../../json/molengeek.json" assert { type: "json" };
-console.log(DATA.jobs);
 
 
 //! ********************** Menu Burger ***************************
@@ -56,7 +55,6 @@ let lesPostes = document.querySelectorAll(".postesJobs")
 let descriptionJobs = document.querySelectorAll(".descriptionJobs")
 
 descriptionJobs.forEach(element => {
-  console.log(element.innerText);
 });
 
 DATA.jobs.forEach((element,index) => {

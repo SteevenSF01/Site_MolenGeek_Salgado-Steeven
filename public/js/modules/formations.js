@@ -46,25 +46,21 @@ Object.values(DATA.reseauxSociaux).forEach((element, index) => {
 
 //! ************************** Acrodeon ***************************
 
-let bntLongues = document.querySelector(".btnfl")
-let bntCourtes = document.querySelector(".btnfc")
+let bntLongues = document.querySelector(".btnfl");
+let bntCourtes = document.querySelector(".btnfc");
 
-bntLongues.addEventListener("click",()=>{
-    document.querySelector(".formationsLongues").style.display ="block"
-    document.querySelector(".formationsCourtes").style.display = "none"    
-})
-bntCourtes.addEventListener("click",()=>{
-  document.querySelector(".formationsLongues").style.display ="none"
-  document.querySelector(".formationsCourtes").style.display = "flex"
-})
-
-
-
+bntLongues.addEventListener("click", () => {
+  document.querySelector(".formationsLongues").style.display = "block";
+  document.querySelector(".formationsCourtes").style.display = "none";
+});
+bntCourtes.addEventListener("click", () => {
+  document.querySelector(".formationsLongues").style.display = "none";
+  document.querySelector(".formationsCourtes").style.display = "flex";
+});
 
 //! *********************** Card Formations ***********************
 
 //? *********************** Formation longues **********************
-
 
 let nomFormation = document.querySelectorAll(".fNom");
 let durForm = document.querySelectorAll(".fDuree");
@@ -121,48 +117,52 @@ lesConditions(
 );
 //? ************************** Fin Formations longues ******************
 
-
 //? *************************  Fomations Courtes ********************
 
-let forCourtes = document.querySelector(".formationsCourtes").querySelectorAll("p")
-
-// forCourtes.forEach(element => {
-//   console.log(element);
-// });
+let forCourtes = document
+  .querySelector(".formationsCourtes")
+  .querySelectorAll("p");
 
 Object.values(DATA.formations.formationsCourtes).forEach((element, index) => {
   forCourtes[index].innerText = ` ${element.Nom} \n ${element.pack}`;
 });
 
-
 //! ******************************* Fin Cards **************************
-
 
 //! ****************************** Temoignage ***************************
 
-let lesIframe = document.querySelectorAll("iframe")
+let lesIframe = document.querySelectorAll("iframe");
 
-lesIframe[0].src = DATA.videosTemoignage.videoI
-lesIframe[1].src = DATA.videosTemoignage.videoII
+lesIframe[0].src = DATA.videosTemoignage.videoI;
+lesIframe[1].src = DATA.videosTemoignage.videoII;
 
 //! ******************************* Fin Temoignage ************************
 
-let question = document.querySelectorAll(".questionFaq")
-console.log(question);
-let reponse = document.querySelectorAll(".reponseFaq")
-console.log(reponse);
 
-let arrayReponse = []
-let arrayQuestion = []
 
-for (let key in DATA.FAQ){
-  if (key == "questionI" || key == "questionII" || key == "questionIII"|| key == "questionIV"|| key == "questionV") {
-    arrayQuestion.push(key)
-  } else if (key == "reponseI" || key == "reponseII" || key == "reponseIII"||key == "reponseIV"||key == "reponseV") {
-    arrayReponse.push(key)
-    
+//! ******************************* FAQ ******************************
+
+let question = document.querySelectorAll(".questionFaq");
+let reponse = document.querySelectorAll(".reponseFaq");
+
+let arrayReponse = [];
+let arrayQuestion = [];
+
+for (let key in DATA.FAQ) {
+  if (key.startsWith("question")) {
+    arrayQuestion.push(DATA.FAQ[key]);
+  } else if (key.startsWith("reponse")) {
+    arrayReponse.push(DATA.FAQ[key]);
   }
 }
 
-console.log(Object.values(arrayQuestion));
-console.log(arrayReponse);
+function faq(array, cible) {
+  array.forEach((element, index) => {
+    cible[index].innerText = element;
+  });
+}
+faq(arrayQuestion, question);
+faq(arrayReponse, reponse);
+
+//! ******************************** Fin FAQ **************************
+
