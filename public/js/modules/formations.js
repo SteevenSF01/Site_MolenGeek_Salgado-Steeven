@@ -144,3 +144,25 @@ let lesIframe = document.querySelectorAll("iframe")
 
 lesIframe[0].src = DATA.videosTemoignage.videoI
 lesIframe[1].src = DATA.videosTemoignage.videoII
+
+//! ******************************* Fin Temoignage ************************
+
+let question = document.querySelectorAll(".questionFaq")
+console.log(question);
+let reponse = document.querySelectorAll(".reponseFaq")
+console.log(reponse);
+
+let arrayReponse = []
+let arrayQuestion = []
+
+for (let key in DATA.FAQ){
+  if (key == "questionI" || key == "questionII" || key == "questionIII"|| key == "questionIV"|| key == "questionV") {
+    arrayQuestion.push(key)
+  } else if (key == "reponseI" || key == "reponseII" || key == "reponseIII"||key == "reponseIV"||key == "reponseV") {
+    arrayReponse.push(key)
+    
+  }
+}
+
+console.log(Object.values(arrayQuestion));
+console.log(arrayReponse);
