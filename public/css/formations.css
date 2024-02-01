@@ -422,11 +422,13 @@ transition: 1s ease;
 /************************* Temoignage *************************/
 
 .temoignage{
+  padding-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
 }
 .temoignage iframe{
   width: 400px;

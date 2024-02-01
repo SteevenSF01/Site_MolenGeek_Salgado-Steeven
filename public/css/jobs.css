@@ -3,9 +3,11 @@
   font-family: Playfair;
   src: url(./../src/fonts/PlayfairDisplay-Regular.ttf);
 }
+*{
+  font-family: Playfair;
+}
 body {
     min-height: 100vh;
-    font-family: Plafair;
 }
 /***************************************/
 /************ NavBar header ************/

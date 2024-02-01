@@ -3,9 +3,11 @@
   font-family: Playfair;
   src: url(./../src/fonts/PlayfairDisplay-Regular.ttf);
 }
+*{
+  font-family: Playfair;
+}
 body {
     min-height: 100vh;
-    font-family: Plafair;
 }
 /***************************************/
 /************ NavBar header ************/
@@ -161,6 +163,64 @@ nav a:hover {
 
 /*******************************************/
 /**************** Fin NavBar ***************/
+
+
+.baniere{
+  width: 100%;
+  height: 550px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+.baniere::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(./../src/img/baniereApropos.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  z-index: -1;
+  filter: brightness(75%);
+  background-attachment: fixed;
+}
+.baniere h1{
+  color: white;
+}
+.section1 span{
+  color: #8306e4cc;
+}
+.listeApropos{
+  list-style: circle;
+}
+
+.listeApropos li::marker{
+  color: #8306e4cc;
+}
+
+.ensemble span{
+  color: #8306e4cc;
+}
+.partenaires{
+  list-style: circle;
+}
+.partenaires li::marker{
+  color: #8306e4cc;
+}
+.locale{
+  list-style: circle;
+}
+.locale li::marker{
+  color: #8306e4cc;
+}
+.fin span{
+  color: #8306e4cc;
+}
 
 
 /************************** Footer *************************/
