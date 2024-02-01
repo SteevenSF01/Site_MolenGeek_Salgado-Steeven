@@ -210,8 +210,8 @@
         "linkedin": "https://www.linkedin.com/company/molengeek/"
     },
     "videosTemoignage": {
-        "videoI": "https://youtu.be/QfLqHDuaShY",
-        "videoII": "https://youtu.be/XzKHGe1BWI4"
+        "videoI": "https://youtube.com/embed/QfLqHDuaShY",
+        "videoII": "https://youtube.com/embed/XzKHGe1BWI4"
     },
     "FAQ": {
         "questionI": "Quel est le planning des formations ?",

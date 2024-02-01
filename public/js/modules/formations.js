@@ -136,3 +136,11 @@ Object.values(DATA.formations.formationsCourtes).forEach((element, index) => {
 
 
 //! ******************************* Fin Cards **************************
+
+
+//! ****************************** Temoignage ***************************
+
+let lesIframe = document.querySelectorAll("iframe")
+
+lesIframe[0].src = DATA.videosTemoignage.videoI
+lesIframe[1].src = DATA.videosTemoignage.videoII

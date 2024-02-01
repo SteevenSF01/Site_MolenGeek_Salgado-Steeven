@@ -362,8 +362,8 @@ transition: 1s ease;
 .cardDerierre {
   transform: rotateY(180deg);
   background: linear-gradient(167deg,
-      rgba(131, 6, 228, 0.8) 0%,
-      rgba(195, 18, 224, 0.8) 100%);
+  rgba(131, 6, 228, 0.8) 0%,
+  rgba(195, 18, 224, 0.8) 100%);
 }
 
 
@@ -403,7 +403,7 @@ transition: 1s ease;
     width: 100%;
     height: 368px;
   }
-
+  
   .descriptionCardArriere {
     font-size: small;
   }
@@ -414,12 +414,35 @@ transition: 1s ease;
     width: 100%;
     height: 250px;
   }
-
+  
   .descriptionCardArriere p {
     line-height: 25px;
   }
 }
+/************************* Temoignage *************************/
 
+.temoignage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.temoignage iframe{
+  width: 400px;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width: 768px) {
+  .temoignage iframe{
+    width: 500px;
+  }
+}
+@media (max-width: 426px) {
+  .temoignage iframe{
+    width: 200px;
+  }
+}
 
 /************************** Footer *************************/
 
@@ -562,3 +585,4 @@ transition: 1s ease;
 
   }
 }
+
