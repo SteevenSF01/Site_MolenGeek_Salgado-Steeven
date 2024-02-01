@@ -1,5 +1,5 @@
 import DATA from "./../../json/molengeek.json" assert { type: "json" };
-console.log(DATA.reseauxSociaux);
+// console.log(DATA.reseauxSociaux);
 
 
 //! ********************** Menu Burger ***************************
@@ -47,5 +47,57 @@ let liResaux = document.querySelector(".resauxSoc").querySelectorAll("a")
 
 Object.values(DATA.reseauxSociaux).forEach((element,index) => {
 	liResaux[index].href = element
-	console.log(element);
 })
+
+//! ************************** Acrodeon ***************************
+
+
+
+//! *********************** Card Formations ***********************
+
+let nomFormation = document.querySelectorAll(".fNom")
+let durForm = document.querySelectorAll(".fDuree")
+
+//? les conditions 
+let condingCondition = document.querySelectorAll(".condingCondition")
+let mkcondition = document.querySelectorAll(".mkCondition")
+let wbCondition = document.querySelectorAll(".wbCondition")
+let awscondition = document.querySelectorAll(".awsCondition")
+let sfacondition = document.querySelectorAll(".sfaCondition")
+
+
+Object.keys(DATA.formations.formationsLongues).forEach((element, index) => {
+  nomFormation[index].innerText = element
+});
+
+
+function inserer(DATA, cible ,cible2) {
+  let formationsLongues = DATA.formations.formationsLongues;
+  Object.keys(formationsLongues).forEach((key, index) => {
+    let formation = formationsLongues[key];
+    cible[index].innerText = `Nom : ${formation.Nom} \n Durée : ${formation.Duree}\n Descriptif : ${formation.Descriptif} `;
+
+});
+}
+inserer(DATA,durForm)
+
+function lesConditions(formation,cible) {
+  
+  Object.keys(formation).forEach((key, index) => {
+      let conditionValue = formation[key];
+      
+      if (conditionValue === null) {
+          conditionValue = "Pas d'âge requis";
+      }
+        cible[index].innerText += ` ${conditionValue}`;
+  });
+  
+}
+
+lesConditions(DATA.formations.formationsLongues.codingSchool.condition,condingCondition)
+lesConditions(DATA.formations.formationsLongues.marketingDigital.condition,mkcondition)
+lesConditions(DATA.formations.formationsLongues.webmaster360.condition,wbCondition)
+lesConditions(DATA.formations.formationsLongues.aws.condition,awscondition)
+lesConditions(DATA.formations.formationsLongues.salesforceAdmin.condition,sfacondition)
+
+//! ******************************* Fin Cards **************************

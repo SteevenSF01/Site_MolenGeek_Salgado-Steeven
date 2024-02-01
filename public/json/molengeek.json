@@ -9,136 +9,136 @@
     "formations": {
         "formationsLongues": {
             "codingSchool": {
-                "nom": "Coding School",
-                "duree": "6 mois",
-                "descriptif": "Apprends à coder un site internet de A à Z",
+                "Nom": "Coding School",
+                "Duree": "6 mois",
+                "Descriptif": "Apprends à coder un site internet de A à Z",
                 "condition": {
                     "ageMax": "29 ans",
-                    "situation": "Demandeur d'emploi",
-                    "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "Situation": "Demandeur d'emploi",
+                    "Prix": "Gratuit",
+                    "Horaire": "temps plein 9h / 17h"
                 }
             },
             "marketingDigital": {
-                "nom": "Marketing Digital",
-                "duree": "6 mois",
-                "descriptif": "Forme-toi au marketing digital",
+                "Nom": "Marketing Digital",
+                "Duree": "6 mois",
+                "Descriptif": "Forme-toi au marketing digital",
                 "condition": {
                     "ageMax": "29 ans",
-                    "situation": "Demandeur d'emploi",
-                    "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "Situation": "Demandeur d'emploi",
+                    "Prix": "Gratuit",
+                    "Horaire": "temps plein 9h / 17h"
                 }
             },
             "webmaster360": {
-                "nom": "Webmaster 360",
-                "duree": "6 mois",
-                "descriptif": "Crée des sites performants et attractifs avec WordPress",
+                "Nom": "Webmaster 360",
+                "Duree": "6 mois",
+                "Descriptif": "Crée des sites performants et attractifs avec WordPress",
                 "condition": {
                     "ageMax": null,
-                    "situation": "Demandeur d'emploi",
-                    "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "Situation": "Demandeur d'emploi",
+                    "Prix": "Gratuit",
+                    "Horaire": "temps plein 9h / 17h"
                 }
             },
             "aws": {
-                "nom": "AWS re/Start",
-                "duree": "3 mois",
-                "descriptif": "Développe tes compétences en Cloud",
+                "Nom": "AWS re/Start",
+                "Duree": "3 mois",
+                "Descriptif": "Développe tes compétences en Cloud",
                 "condition": {
                     "ageMax": "29 ans",
-                    "situation": "Demandeur d'emploi",
-                    "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "Situation": "Demandeur d'emploi",
+                    "Prix": "Gratuit",
+                    "Horaire": "temps plein 9h / 17h"
                 }
             },
             "salesforceAdmin": {
-                "nom": "Salesforce Administrateur",
-                "duree": "3 mois",
-                "descriptif": "Optimise un bon service client grâce à Salesforce",
+                "Nom": "Salesforce Administrateur",
+                "Duree": "3 mois",
+                "Descriptif": "Optimise un bon service client grâce à Salesforce",
                 "condition": {
                     "ageMax": null,
-                    "situation": "Demandeur d'emploi",
-                    "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "Situation": "Demandeur d'emploi",
+                    "Prix": "Gratuit",
+                    "Horaire": "temps plein 9h / 17h"
                 }
             }
         },
         "formationsCourtes": [
             {
-                "nom": "HTML & CSS Débutant",
+                "Nom": "HTML & CSS Débutant",
                 "pack": "Pack Web"
             },
             {
-                "nom": "HTML & CSS Avancé",
+                "Nom": "HTML & CSS Avancé",
                 "pack": "Pack Web"
             },
             {
-                "nom": "Javascript",
+                "Nom": "Javascript",
                 "pack": "Pack Web - Coding"
             },
             {
-                "nom": "Python",
+                "Nom": "Python",
                 "pack": "Pack Coding"
             },
             {
-                "nom": "Photoshop Débutant",
+                "Nom": "Photoshop Débutant",
                 "pack": "Pack Design"
             },
             {
-                "nom": "Photoshop Avancé",
+                "Nom": "Photoshop Avancé",
                 "pack": "Pack Design"
             },
             {
-                "nom": "Illustrator",
+                "Nom": "Illustrator",
                 "pack": "Pack Design - Content creator"
             },
             {
-                "nom": "Indesign",
+                "Nom": "Indesign",
                 "pack": "Pack Design"
             },
             {
-                "nom": "Premier Pro",
+                "Nom": "Premier Pro",
                 "pack": "Pack audiovisuel - Content creator"
             },
             {
-                "nom": "After Effects",
+                "Nom": "After Effects",
                 "pack": "Pack audiovisuel"
             },
             {
-                "nom": "Adobe Audition",
+                "Nom": "Adobe Audition",
                 "pack": "Pack audiovisuel"
             },
             {
-                "nom": "Shopify Débutant",
+                "Nom": "Shopify Débutant",
                 "pack": "Pack E-commerce - Entrepreneur"
             },
             {
-                "nom": "Shopify Avancé",
+                "Nom": "Shopify Avancé",
                 "pack": "Pack E-commerce - Entrepreneur"
             },
             {
-                "nom": "Google Analytics",
+                "Nom": "Google Analytics",
                 "pack": "Pack E-commerce - Entrepreneur"
             },
             {
-                "nom": "Google Ads",
+                "Nom": "Google Ads",
                 "pack": "Pack E-commerce - Entrepreneur"
             },
             {
-                "nom": "Wordpress Débutant",
+                "Nom": "Wordpress Débutant",
                 "pack": "Pack Entrepreneur - Web"
             },
             {
-                "nom": "Wordpress Avancé",
+                "Nom": "Wordpress Avancé",
                 "pack": "Pack Entrepreneur - Web"
             },
             {
-                "nom": "Réseaux Sociaux Débutant",
+                "Nom": "Réseaux Sociaux Débutant",
                 "pack": "Pack Content creator - Entrepreneur - Ecommerce"
             },
             {
-                "nom": "Réseaux Sociaux Avancé",
+                "Nom": "Réseaux Sociaux Avancé",
                 "pack": "Pack Content creator - Entrepreneur - Ecommerce"
             }
         ],

@@ -13,6 +13,7 @@ nav {
     background-color: white;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
     width: 100%;
+    border-bottom: solid 2px black;
 }
 
 nav ul {
@@ -161,6 +162,155 @@ nav a:hover {
   }
 /*******************************************/
 /**************** Fin NavBar ***************/
+
+
+
+/*************** Baniere Formations ***********/
+
+.baniereFormation{
+  width: 100%;
+  height: 600px;
+  position:relative;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.baniereFormation::before{
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(./../src/img/baniereFormation.jpg);
+  background-repeat: no-repeat;
+  background-size: cover  ;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(60%) blur(1px)   ;
+  background-attachment: fixed; 
+}
+.baniereFormation h1{
+  width: 70%;
+  text-align: center;
+  color: white;
+}
+
+/******************** Fin Baniere Formation ****************/
+
+/********************** Pourquoi MolenGeek *********************/
+
+.pourquoiMolengeek{
+  text-align: center;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interrogationFormation{
+  color: #8306e4cc;
+}
+
+/******************* Fin Pourquoi MolenGeek ****************/
+
+/****************** Formations Acordeon *******************/
+
+
+
+
+/************************* Card Acordeon ******************/
+.containerCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 10px;
+}
+
+.contenueCard {
+  width: calc((100% - 20px) / 3); /* 100% de la width - 20 px et diviser par 3 pour les 3 cards*/
+  position: relative;
+  height: 25em;
+  perspective: 1500px;
+}
+
+.cardAbsolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 1s ease-in-out; /* Añadimos transición */
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cardFace {
+  background-color: #FFF;
+}
+
+.cardDerierre {
+  transform: rotateY(180deg);
+  background: linear-gradient(167deg,
+  rgba(131, 6, 228, 0.8) 0%,
+  rgba(195, 18, 224, 0.8) 100%);
+}
+
+
+.contenueCard:hover .cardFace {
+  transform: rotateY(-180deg); /* Giramos la tarjeta al pasar el ratón sobre ella */
+}
+
+.contenueCard:hover .cardDerierre {
+  transform: rotateY(0); /* Mostramos el lado trasero al girar */
+}
+.descriptionCardFace{
+  height: 100%;
+  font-size: 25px;
+  color: #8306e4cc;
+  border: #8306e4cc solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.descriptionCardArriere{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  /* align-items: center; */
+}
+.descriptionCardArriere p{
+  padding: 0;
+  margin: 0;
+  line-height: 40px;
+}
+@media screen and (max-width: 769px) {
+  .contenueCard {
+    width: calc((100% - 20px) / 2);
+    height: 368px; 
+  }
+  .descriptionCardArriere{
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contenueCard {
+    width: 100%;
+    height: 250px; 
+  }
+  .descriptionCardArriere p{
+    line-height: 25px;
+  }
+}
+
+
+
+
 
 
 /************************** Footer *************************/
